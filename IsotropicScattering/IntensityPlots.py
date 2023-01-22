@@ -10,10 +10,8 @@ import numpy as np
 from math import exp
 
 Isotropic_intensity = []
-
 bins = []
 bins_index = np.linspace(0,9,num=10)
-
 
 def func1(text_file):
     lines=[]
@@ -22,24 +20,10 @@ def func1(text_file):
     for i in range(0,10):
         y = float(lines[i])
         Isotropic_intensity.append(y)
-       
-            
-        
-
 
 func1("IsotropicScattering.txt")
-
-
-
-
-
 plt.plot(bins_index, Isotropic_intensity, 'o', ms=4, label='Isotropic Scattering')
-
-
-
 plt.xlabel("Bin number")
 plt.ylabel("Relative intensity")
 plt.legend(prop={'size': 9})
-
-
 plt.savefig("ScatteringExperiment")
