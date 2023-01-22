@@ -5,7 +5,6 @@ Created on Sat Mar 26 13:01:40 2022
 
 @author: nrobinson15
 """
-
 import matplotlib.pyplot as plt
 import numpy as np
 from math import exp
